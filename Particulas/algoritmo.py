@@ -1,5 +1,5 @@
 import math
 
-def distancia_euclidiana(x_1, y_1, x_2, y_2):
-    distan = math.sqrt((x_1-x_2)**2+(y_1-y_2)**2)
+def distancia_euclidiana(origen_x, origen_y, destino_x, destino_y):
+    distan = math.sqrt((origen_x-origen_y)**2+(destino_x-destino_y)**2)
     return distan

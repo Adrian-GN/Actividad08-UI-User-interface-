@@ -76,19 +76,56 @@ class Ui_MainWindow(object):
         self.Mostrar_pushButton.setGeometry(QRect(10, 340, 231, 23))
         self.layoutWidget = QWidget(self.groupBox_2)
         self.layoutWidget.setObjectName(u"layoutWidget")
-        self.layoutWidget.setGeometry(QRect(10, 10, 231, 154))
+        self.layoutWidget.setGeometry(QRect(10, 10, 231, 173))
         self.gridLayout = QGridLayout(self.layoutWidget)
         self.gridLayout.setObjectName(u"gridLayout")
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.Destino_x_spinBox = QSpinBox(self.layoutWidget)
+        self.Destino_x_spinBox.setObjectName(u"Destino_x_spinBox")
+        self.Destino_x_spinBox.setMaximumSize(QSize(42, 22))
+        self.Destino_x_spinBox.setMaximum(500)
+
+        self.gridLayout.addWidget(self.Destino_x_spinBox, 3, 1, 1, 1)
+
+        self.label_4 = QLabel(self.layoutWidget)
+        self.label_4.setObjectName(u"label_4")
+
+        self.gridLayout.addWidget(self.label_4, 3, 0, 1, 1)
+
+        self.ID_lineEdit = QLineEdit(self.layoutWidget)
+        self.ID_lineEdit.setObjectName(u"ID_lineEdit")
+
+        self.gridLayout.addWidget(self.ID_lineEdit, 0, 1, 1, 1)
+
+        self.Origen_y_spinBox = QSpinBox(self.layoutWidget)
+        self.Origen_y_spinBox.setObjectName(u"Origen_y_spinBox")
+        self.Origen_y_spinBox.setMaximum(500)
+
+        self.gridLayout.addWidget(self.Origen_y_spinBox, 2, 1, 1, 1)
+
+        self.label_2 = QLabel(self.layoutWidget)
+        self.label_2.setObjectName(u"label_2")
+
+        self.gridLayout.addWidget(self.label_2, 1, 0, 1, 1)
+
+        self.Origen_x_spinBox = QSpinBox(self.layoutWidget)
+        self.Origen_x_spinBox.setObjectName(u"Origen_x_spinBox")
+        self.Origen_x_spinBox.setMinimumSize(QSize(42, 22))
+        self.Origen_x_spinBox.setMaximumSize(QSize(42, 22))
+        self.Origen_x_spinBox.setMaximum(500)
+
+        self.gridLayout.addWidget(self.Origen_x_spinBox, 1, 1, 1, 1)
+
+        self.Destino_y_spinBox = QSpinBox(self.layoutWidget)
+        self.Destino_y_spinBox.setObjectName(u"Destino_y_spinBox")
+        self.Destino_y_spinBox.setMaximum(500)
+
+        self.gridLayout.addWidget(self.Destino_y_spinBox, 4, 1, 1, 1)
+
         self.Id_label = QLabel(self.layoutWidget)
         self.Id_label.setObjectName(u"Id_label")
 
         self.gridLayout.addWidget(self.Id_label, 0, 0, 1, 1)
-
-        self.Velocidad_lineEdit = QLineEdit(self.layoutWidget)
-        self.Velocidad_lineEdit.setObjectName(u"Velocidad_lineEdit")
-
-        self.gridLayout.addWidget(self.Velocidad_lineEdit, 5, 1, 1, 1)
 
         self.label_3 = QLabel(self.layoutWidget)
         self.label_3.setObjectName(u"label_3")
@@ -100,52 +137,16 @@ class Ui_MainWindow(object):
 
         self.gridLayout.addWidget(self.label_5, 4, 0, 1, 1)
 
-        self.Destino_x_spinBox = QSpinBox(self.layoutWidget)
-        self.Destino_x_spinBox.setObjectName(u"Destino_x_spinBox")
-        self.Destino_x_spinBox.setMaximumSize(QSize(42, 22))
-        self.Destino_x_spinBox.setMaximum(500)
-
-        self.gridLayout.addWidget(self.Destino_x_spinBox, 3, 1, 1, 1)
-
-        self.ID_lineEdit = QLineEdit(self.layoutWidget)
-        self.ID_lineEdit.setObjectName(u"ID_lineEdit")
-
-        self.gridLayout.addWidget(self.ID_lineEdit, 0, 1, 1, 1)
-
-        self.Origen_x_spinBox = QSpinBox(self.layoutWidget)
-        self.Origen_x_spinBox.setObjectName(u"Origen_x_spinBox")
-        self.Origen_x_spinBox.setMinimumSize(QSize(42, 22))
-        self.Origen_x_spinBox.setMaximumSize(QSize(42, 22))
-        self.Origen_x_spinBox.setMaximum(500)
-
-        self.gridLayout.addWidget(self.Origen_x_spinBox, 1, 1, 1, 1)
-
-        self.Origen_y_spinBox = QSpinBox(self.layoutWidget)
-        self.Origen_y_spinBox.setObjectName(u"Origen_y_spinBox")
-        self.Origen_y_spinBox.setMaximum(500)
-
-        self.gridLayout.addWidget(self.Origen_y_spinBox, 2, 1, 1, 1)
-
         self.label_6 = QLabel(self.layoutWidget)
         self.label_6.setObjectName(u"label_6")
 
         self.gridLayout.addWidget(self.label_6, 5, 0, 1, 1)
 
-        self.label_2 = QLabel(self.layoutWidget)
-        self.label_2.setObjectName(u"label_2")
+        self.Velocidad_spinBox = QSpinBox(self.layoutWidget)
+        self.Velocidad_spinBox.setObjectName(u"Velocidad_spinBox")
+        self.Velocidad_spinBox.setMaximum(500)
 
-        self.gridLayout.addWidget(self.label_2, 1, 0, 1, 1)
-
-        self.label_4 = QLabel(self.layoutWidget)
-        self.label_4.setObjectName(u"label_4")
-
-        self.gridLayout.addWidget(self.label_4, 3, 0, 1, 1)
-
-        self.Destino_y_spinBox = QSpinBox(self.layoutWidget)
-        self.Destino_y_spinBox.setObjectName(u"Destino_y_spinBox")
-        self.Destino_y_spinBox.setMaximum(500)
-
-        self.gridLayout.addWidget(self.Destino_y_spinBox, 4, 1, 1, 1)
+        self.gridLayout.addWidget(self.Velocidad_spinBox, 5, 1, 1, 1)
 
         self.Salida = QPlainTextEdit(self.centralwidget)
         self.Salida.setObjectName(u"Salida")
@@ -188,12 +189,12 @@ class Ui_MainWindow(object):
         self.Agregar_Final_pushButton.setText(QCoreApplication.translate("MainWindow", u"Agregar al Final", None))
         self.Agregar_Inicio_pushButton.setText(QCoreApplication.translate("MainWindow", u"Agregar al Inicio", None))
         self.Mostrar_pushButton.setText(QCoreApplication.translate("MainWindow", u"Mostrar", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Destino x:", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Origen en x:", None))
         self.Id_label.setText(QCoreApplication.translate("MainWindow", u"ID: ", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Origen en y:", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"Destino y:", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Velocidad:", None))
-        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Origen en x:", None))
-        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Destino x:", None))
         self.menuArchivo.setTitle(QCoreApplication.translate("MainWindow", u"Archivo", None))
     # retranslateUi
 

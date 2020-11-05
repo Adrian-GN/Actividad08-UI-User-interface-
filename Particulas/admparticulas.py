@@ -3,9 +3,9 @@ import json
 class Particulas:
     def __init__(self):
         self.__particulas= []
-    def agregar_final(self, particula):
+    def agregar_final(self, particula:Particula):
         self.__particulas.append(particula)
-    def agregar_inicio(self, particula):
+    def agregar_inicio(self, particula:Particula):
         self.__particulas.insert(0, particula)
     def mostrar(self):
         for particula in self.__particulas:
@@ -29,7 +29,7 @@ class Particulas:
         try:
             with open(ubicacion, 'r') as archivo:
                 lista = json.load(archivo)
-                self.__particulas= [Particula(**particula)for particula in particulas]
+                self.__particulas= [Particula(**particula)for particula in lista]
             return 1
         except:
             return 0
