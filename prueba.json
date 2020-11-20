@@ -1,22 +1,22 @@
 [
          {
                   "id": "1",
-                  "origen_x": 2,
-                  "origen_y": 3,
-                  "destino_x": 4,
-                  "destino_y": 5,
-                  "velocidad": "25",
+                  "origen_x": 0,
+                  "origen_y": 2,
+                  "destino_x": 0,
+                  "destino_y": 0,
+                  "velocidad": 0,
                   "red": 0,
                   "green": 0,
                   "blue": 0
          },
          {
-                  "id": "2",
-                  "origen_x": 3,
-                  "origen_y": 4,
-                  "destino_x": 5,
-                  "destino_y": 6,
-                  "velocidad": "50",
+                  "id": "23",
+                  "origen_x": 45,
+                  "origen_y": 5,
+                  "destino_x": 0,
+                  "destino_y": 0,
+                  "velocidad": 0,
                   "red": 0,
                   "green": 0,
                   "blue": 0
