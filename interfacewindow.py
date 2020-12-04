@@ -5,6 +5,8 @@ from Particulas.admparticulas import Particulas
 from Particulas.Act9 import Particula
 from PySide2.QtGui import QPen, QColor, QTransform
 from random import randint
+from pprint import pprint
+from pprint import pformat
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -21,13 +23,40 @@ class MainWindow(QMainWindow):
         self.ui.actionGuardar.triggered.connect(self.action_guardar_archivo)
         self.ui.Mostrar_tabla_pushButton_2.clicked.connect(self.mostrar_tabla)
         self.ui.buscar_pushButton.clicked.connect(self.buscar_id)
-        self.ui.dibujar_pushButton.clicked.connect(self.dibujar)
+        self.ui.Mostrar_pushButton.clicked.connect(self.dibujar)
         self.ui.limpiar_pushButton.clicked.connect(self.limpiar)
         self.scene = QGraphicsScene()
         self.ui.graphicsView.setScene(self.scene)
+        self.ui.graphicsView_2.setScene(self.scene)
         self.ui.ordenar_id_pushButton.clicked.connect(self.ordenar_id)
         self.ui.ordenar_dist_pushButton.clicked.connect(self.ordenar_distancia)
         self.ui.ordenar_vel_pushButton.clicked.connect(self.ordenar_velocidad)
+        self.ui.Mostrar_pushButton.clicked.connect(self.mostrar_grafos)
+
+    @Slot()
+    def mostrar_grafos(self):
+        grafos = dict()
+        grafos = {
+        }
+        for particula in self.particulas:
+            o = (particula.origen_x, particula.origen_y)
+            d = (particula.destino_x, particula.destino_y)
+            ao = (particula.destino_x, particula.destino_y, particula.distancia)
+            ad = (particula.origen_x,particula.origen_y,particula.distancia )
+
+            if o in grafos:
+                grafos[o].append(ao)
+            else:
+                grafos[o] = [ao]
+
+            if d in grafos:
+                grafos[d].append(ad)
+            else:
+                grafos[d] = [ad]
+        str = pformat(grafos, width=40, indent=1)
+        print(str)
+        self.ui.Salida.clear()
+        self.ui.Salida.insertPlainText(str)
     @Slot()
     def ordenar_id(self):
         self.ui.tabla.setColumnCount(10)

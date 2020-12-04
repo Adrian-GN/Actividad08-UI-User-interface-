@@ -29,29 +29,11 @@ class Ui_MainWindow(object):
         self.Agregar.setGeometry(QRect(10, 0, 761, 551))
         self.Tab = QWidget()
         self.Tab.setObjectName(u"Tab")
-        self.Salida = QPlainTextEdit(self.Tab)
-        self.Salida.setObjectName(u"Salida")
-        self.Salida.setGeometry(QRect(470, 10, 261, 481))
         self.groupBox_2 = QGroupBox(self.Tab)
         self.groupBox_2.setObjectName(u"groupBox_2")
-        self.groupBox_2.setGeometry(QRect(0, 0, 461, 491))
+        self.groupBox_2.setGeometry(QRect(0, 0, 745, 511))
         self.gridLayout_4 = QGridLayout(self.groupBox_2)
         self.gridLayout_4.setObjectName(u"gridLayout_4")
-        self.ordenar_dist_pushButton = QPushButton(self.groupBox_2)
-        self.ordenar_dist_pushButton.setObjectName(u"ordenar_dist_pushButton")
-
-        self.gridLayout_4.addWidget(self.ordenar_dist_pushButton, 6, 0, 1, 1)
-
-        self.Agregar_Final_pushButton = QPushButton(self.groupBox_2)
-        self.Agregar_Final_pushButton.setObjectName(u"Agregar_Final_pushButton")
-
-        self.gridLayout_4.addWidget(self.Agregar_Final_pushButton, 2, 0, 1, 1)
-
-        self.Mostrar_pushButton = QPushButton(self.groupBox_2)
-        self.Mostrar_pushButton.setObjectName(u"Mostrar_pushButton")
-
-        self.gridLayout_4.addWidget(self.Mostrar_pushButton, 4, 0, 1, 1)
-
         self.gridLayout = QGridLayout()
         self.gridLayout.setObjectName(u"gridLayout")
         self.ID_lineEdit = QLineEdit(self.groupBox_2)
@@ -125,15 +107,15 @@ class Ui_MainWindow(object):
 
         self.gridLayout_4.addLayout(self.gridLayout, 0, 0, 1, 1)
 
-        self.Agregar_Inicio_pushButton = QPushButton(self.groupBox_2)
-        self.Agregar_Inicio_pushButton.setObjectName(u"Agregar_Inicio_pushButton")
+        self.Salida = QPlainTextEdit(self.groupBox_2)
+        self.Salida.setObjectName(u"Salida")
 
-        self.gridLayout_4.addWidget(self.Agregar_Inicio_pushButton, 3, 0, 1, 1)
+        self.gridLayout_4.addWidget(self.Salida, 0, 1, 8, 1)
 
-        self.ordenar_id_pushButton = QPushButton(self.groupBox_2)
-        self.ordenar_id_pushButton.setObjectName(u"ordenar_id_pushButton")
+        self.graphicsView_2 = QGraphicsView(self.groupBox_2)
+        self.graphicsView_2.setObjectName(u"graphicsView_2")
 
-        self.gridLayout_4.addWidget(self.ordenar_id_pushButton, 5, 0, 1, 1)
+        self.gridLayout_4.addWidget(self.graphicsView_2, 0, 2, 8, 1)
 
         self.Color_RGB = QGroupBox(self.groupBox_2)
         self.Color_RGB.setObjectName(u"Color_RGB")
@@ -174,6 +156,31 @@ class Ui_MainWindow(object):
 
 
         self.gridLayout_4.addWidget(self.Color_RGB, 1, 0, 1, 1)
+
+        self.Agregar_Final_pushButton = QPushButton(self.groupBox_2)
+        self.Agregar_Final_pushButton.setObjectName(u"Agregar_Final_pushButton")
+
+        self.gridLayout_4.addWidget(self.Agregar_Final_pushButton, 2, 0, 1, 1)
+
+        self.Agregar_Inicio_pushButton = QPushButton(self.groupBox_2)
+        self.Agregar_Inicio_pushButton.setObjectName(u"Agregar_Inicio_pushButton")
+
+        self.gridLayout_4.addWidget(self.Agregar_Inicio_pushButton, 3, 0, 1, 1)
+
+        self.Mostrar_pushButton = QPushButton(self.groupBox_2)
+        self.Mostrar_pushButton.setObjectName(u"Mostrar_pushButton")
+
+        self.gridLayout_4.addWidget(self.Mostrar_pushButton, 4, 0, 1, 1)
+
+        self.ordenar_id_pushButton = QPushButton(self.groupBox_2)
+        self.ordenar_id_pushButton.setObjectName(u"ordenar_id_pushButton")
+
+        self.gridLayout_4.addWidget(self.ordenar_id_pushButton, 5, 0, 1, 1)
+
+        self.ordenar_dist_pushButton = QPushButton(self.groupBox_2)
+        self.ordenar_dist_pushButton.setObjectName(u"ordenar_dist_pushButton")
+
+        self.gridLayout_4.addWidget(self.ordenar_dist_pushButton, 6, 0, 1, 1)
 
         self.ordenar_vel_pushButton = QPushButton(self.groupBox_2)
         self.ordenar_vel_pushButton.setObjectName(u"ordenar_vel_pushButton")
@@ -275,21 +282,21 @@ class Ui_MainWindow(object):
         self.actionGuardar.setShortcut(QCoreApplication.translate("MainWindow", u"Ctrl+S", None))
 #endif // QT_CONFIG(shortcut)
         self.groupBox_2.setTitle(QCoreApplication.translate("MainWindow", u"GroupBox", None))
-        self.ordenar_dist_pushButton.setText(QCoreApplication.translate("MainWindow", u"Ordenar por distancia", None))
-        self.Agregar_Final_pushButton.setText(QCoreApplication.translate("MainWindow", u"Agregar al Final", None))
-        self.Mostrar_pushButton.setText(QCoreApplication.translate("MainWindow", u"Mostrar", None))
         self.Id_label.setText(QCoreApplication.translate("MainWindow", u"ID: ", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Origen en x:", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"Destino y:", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Velocidad:", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Origen en y:", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Destino x:", None))
-        self.Agregar_Inicio_pushButton.setText(QCoreApplication.translate("MainWindow", u"Agregar al Inicio", None))
-        self.ordenar_id_pushButton.setText(QCoreApplication.translate("MainWindow", u"Ordenar por ID", None))
         self.Color_RGB.setTitle(QCoreApplication.translate("MainWindow", u"Color (rgb):", None))
         self.label_9.setText(QCoreApplication.translate("MainWindow", u"Blue:", None))
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"Green:", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Red:", None))
+        self.Agregar_Final_pushButton.setText(QCoreApplication.translate("MainWindow", u"Agregar al Final", None))
+        self.Agregar_Inicio_pushButton.setText(QCoreApplication.translate("MainWindow", u"Agregar al Inicio", None))
+        self.Mostrar_pushButton.setText(QCoreApplication.translate("MainWindow", u"Mostrar", None))
+        self.ordenar_id_pushButton.setText(QCoreApplication.translate("MainWindow", u"Ordenar por ID", None))
+        self.ordenar_dist_pushButton.setText(QCoreApplication.translate("MainWindow", u"Ordenar por distancia", None))
         self.ordenar_vel_pushButton.setText(QCoreApplication.translate("MainWindow", u"Ordenar por velocidad", None))
         self.Agregar.setTabText(self.Agregar.indexOf(self.Tab), QCoreApplication.translate("MainWindow", u"Agregar", None))
         self.buscar_lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Titulo del libro", None))
